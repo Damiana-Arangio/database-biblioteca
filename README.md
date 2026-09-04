@@ -1,63 +1,68 @@
 <h1 align="center">📚 Database Biblioteca Universitaria</h1>
 
-Database relazionale sviluppato in MySQL per la gestione di una biblioteca universitaria.
+Database relazionale progettato per la gestione di una biblioteca universitaria e implementato utilizzando MySQL.
 
-## 🧩 Fasi del Progetto
-Il progetto include tutte le principali fasi della progettazione di basi di dati.
+Il progetto include le principali fasi della progettazione di una base di dati.
 
-### Analisi dei Requisiti
-- raccolta dei requisiti;
+## 🧩 Fasi del progetto
+
+### Analisi dei requisiti
+
+- requisiti espressi in linguaggio naturale;
 - glossario dei termini;
 - strutturazione dei requisiti;
-- specifica dei requisiti.
+- specifica dei requisiti informativi e funzionali.
 
-### Progettazione Concettuale
-- individuazione delle entità;
-- definizione delle relazioni;
-- schema Entità-Relazione;
+### Progettazione concettuale
+
+- strategia Inside-out;
+- creazione dello schema E-R;
+- definizione delle generalizzazioni;
 - dizionario dei dati;
 - regole di vincolo e di derivazione.
 
-### Progettazione Logica
+### Progettazione logica
+
 - ristrutturazione dello schema E-R;
-- traduzione nel modello relazionale.
+- traduzione verso lo schema relazionale.
 
 ### Normalizzazione
-- analisi delle dipendenze funzionali;
-- riduzione di ridondanze e anomalie.
 
-### Progettazione Fisica
-- implementazione delle tabelle;
-- definizione di chiavi primarie ed esterne;
-- vincoli di integrità referenziale;
-- popolamento del database tramite istruzioni SQL.
+- analisi delle dipendenze funzionali per ridurre ridondanze e anomalie.
 
-### Interrogazioni SQL
-- query semplici;
-- JOIN;
-- query nidificate;
-- operatori aggregati;
-- viste;
-- operatori insiemistici.
+### Progettazione fisica
 
-## Schema E-R
+- definizione di come lo schema logico verrà implementato nel DBMS scelto.
+
+### Realizzazione
+
+- implementazione in MySQL.
+
+## 🔎 Interrogazioni SQL
+
+- interrogazioni su singola tabella;
+- interrogazioni con JOIN;
+- interrogazioni con operatori aggregati;
+- interrogazioni nidificate;
+- interrogazioni con viste;
+- interrogazioni con operatori insiemistici.
+
+## 🗂️ Schema E-R
 
 ![Schema E-R](./screenshots/schema-er-finale.png)
 
----
-
-## 🛠️ Tecnologie Utilizzate
+## 🛠️ Tecnologie utilizzate
 
 - MySQL
+- SQL
 
----
-
-## 📂 Struttura del Repository
+## 📂 Struttura del repository
 
 ```text
 database-biblioteca/
 │
 ├── README.md
+│
 ├── sql/
 │   └── bibliotecaDamiana.sql
 │
@@ -67,29 +72,21 @@ database-biblioteca/
 │
 └── screenshots/
     └── schema-er-finale.png
+
 ```
-
----
-
-## 📄 Documentazione
-
-Nella cartella `docs` sono presenti:
-- relazione completa del progetto;
-- presentazione del progetto.
-
----
 
 ## 🚀 Sviluppi Futuri
 
 Il progetto rappresenta la base dati di una possibile applicazione full stack dedicata alla gestione di una biblioteca universitaria.
 
 Possibili evoluzioni future:
-- sviluppo di backend REST API;
-- autenticazione e gestione ruoli utenti;
-- dashboard amministratore per gestione libri, utenti e prestiti;
-- area utente per consultazione catalogo e richiesta prestiti;
-- gestione disponibilità e storico prestiti;
-- frontend web responsive.
+
+sviluppo di API REST per il backend;
+autenticazione e gestione dei ruoli utente;
+dashboard amministrativa per la gestione di libri, utenti e prestiti;
+area utente per la consultazione del catalogo e la richiesta di prestiti;
+gestione della disponibilità e dello storico dei prestiti;
+frontend web responsive.
 
 ---
 
